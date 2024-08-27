@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      #main {
+        width: 100%;
+        cursor: none;
+      }
+      body {
+        background-image: url(https://assets-global.website-files.com/652165b1d773cd686ae9102b/652165b2d773cd686ae911a9_lines.webp);
+        background-size: contain;
+        /* background-size: cover; */
+        margin-left: 0;
+        margin-right: 0;
+        font-family: Outfit;
+      }
+      #nav {
+        height: 62px;
+        width: 100%;
+        /* background-color: aqua; */
+      }
+
+      #innernav {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 28px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #nav a img {
+        height: 33px;
+        width: 120px;
+        cursor: none;
+      }
+
+      #nav a {
+        color: black;
+        text-decoration: none;
+        cursor: none;
+      }
+
+      #nav a i {
+        color: white;
+      }
+
+      #blackcircle {
+        height: 24px;
+        width: 24px;
+        background-color: #000000;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+        margin-right: 7px;
+      }
+
+      #blackcircle:hover {
+        background-color: #6824d4; /* Change background color on hover */
+        cursor: none;
+      }
+
+      #mainbann {
+        /* width: 100%; */
+        height: 300px;
+        /* background-color: aqua; */
+        padding-left: 100px;
+        padding-right: 40px;
+        padding-top: 80px;
+        padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #mainbann h1 {
+        font-size: 4.2vw;
+        line-height: 15px;
+        /* letter-spacing: -0.05vw; */
+      }
+
+      #text {
+        margin-left: 165px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        margin-right: 166px;
+        font-family: Manrope;
+      }
+
+      #text p {
+        font-size: 23px;
+        color: #757575;
+        line-height: 5px;
+      }
+
+      #banner {
+        height: 880px;
+        background-color: #000000;
+      }
+
+      #banner h2 {
+        line-height: 2vw;
+      }
+
+      #bannerBottom {
+        padding-left: 113px;
+        padding-right: 113px;
+        padding-top: 20px;
+        /* background-color: #6824d4; */
+        display: flex;
+      }
+
+      #rectangle {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 40px;
+        width: 40px;
+        background-color: #000000;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: none; /* Remove default button border */
+        cursor: none;
+      }
+
+      #rectangle:hover {
+        background-color: #333333; /* Change background color on hover */
+        cursor: none;
+      }
+
+      #myinput {
+        height: 52px;
+        width: 300px;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 70px; /* Make room for the icon */
+        box-sizing: border-box;
+        outline: none;
+        cursor: none;
+      }
+
+      #myinput::placeholder {
+        color: #636363;
+        font-size: 16px;
+        cursor: none;
+      }
+
+      #myinput:focus {
+        border-color: #333333; /* Custom border color when focused */
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Optional: Add shadow effect */
+        cursor: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="nav">
+        <div id="innernav">
+          <a href="" id="magnet"><img src="/images/logo.png" alt="" /></a>
+          <div id="lnav">
+            <span id="blackcircle">
+              <a
+                href="https://www.linkedin.com/company/actalyst/"
+                target="_blank"
+                ><i class="ri-linkedin-fill"></i
+              ></a>
+            </span>
+
+            <span id="blackcircle">
+              <a href="mailto:hi@actalyst.ai"
+                ><i style="color: white" class="ri-mail-fill"></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="mainbann">
+        <div id="topban" style="display: flex">
+          <img
+            class="anim1"
+            height="196px"
+            width="628px"
+            src="/images/scramble.png"
+            alt=""
+          />
+          <div
+            class="anim2"
+            style="margin-left: 60px; line-height: 20px; margin-top: 20px"
+          >
+            <h1>Your LLM journey</h1>
+            <h1>without us.</h1>
+          </div>
+        </div>
+        <div id="bottomban" style="margin-top: 40px; display: flex">
+          <img
+            class="anim1"
+            height="75px"
+            width="628px"
+            src="/images/line.png"
+            alt=""
+          />
+          <div class="anim2" style="margin-left: 60px">
+            <h1>With us.</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="anim2" id="text">
+        <p>
+          Blending Machine Learning with exceptional engineering to build
+          breakthrough enterprise products.
+        </p>
+        <p style="margin-left: 268px">
+          Connect with us to join our private beta program.
+        </p>
+      </div>
+
+      <div id="banner">
+        <div
+          id="bannerTop"
+          style="display: flex; justify-content: center; font-size: 1.8vw"
+        >
+          <h1 style="color: white">Our latest insights</h1>
+        </div>
+        <div id="bannerBottom">
+          <div id="bannerBottomLeft" style="width: 378px; height: 653px">
+            <div style="width: 100%; height: 100%">
+              <img src="images/left.png" height="501px" width="378px" alt="" />
+              <h2
+                style="
+                  margin-top: 28px;
+                  margin-left: 32px;
+                  margin-right: 32px;
+                  margin-bottom: 28px;
+                  color: white;
+                "
+              >
+                How LLMs Can Unlock Enterprise Data's Full Potential
+              </h2>
+            </div>
+          </div>
+          <div
+            id="bannerBottomRight"
+            style="
+              width: 804px;
+              height: 749px;
+              margin-left: 32px;
+              display: flex;
+            "
+          >
+            <!-- style="width: 378px; height: 374px" -->
+            <div id="r1r3" style="height: 100%; width: 50%">
+              <div id="r1" style="height: 374px; width: 378px">
+                <img height="190px" width="378px" src="images/r1.webp" alt="" />
+                <h2
+                  style="
+                    margin-left: 32px;
+                    margin-right: 32px;
+                    margin-top: 28px;
+                    margin-bottom: 28px;
+                    color: white;
+                  "
+                >
+                  Optimizing Enterprise Chatbots with LlamaIndex Chat Modes in a
+                  RAG System
+                </h2>
+              </div>
+
+              <div id="r3">
+                <img height="190px" width="378px" src="images/r3.webp" alt="" />
+                <h2
+                  style="
+                    margin-left: 32px;
+                    margin-right: 32px;
+                    margin-top: 28px;
+                    margin-bottom: 28px;
+                    color: white;
+                  "
+                >
+                  How to Identify Enterprise LLM Use Cases
+                </h2>
+              </div>
+            </div>
+
+            <div id="r2r4" style="height: 100%; width: 50%">
+              <div id="r2" style="height: 374px; width: 378px">
+                <img height="190px" width="378px" src="images/r2.png" alt="" />
+                <h2
+                  style="
+                    margin-left: 32px;
+                    margin-right: 32px;
+                    margin-top: 28px;
+                    margin-bottom: 28px;
+                    color: white;
+                  "
+                >
+                  Improve Enterprise Application Performance of a RAG system
+                  through Effective Chunking Strategy
+                </h2>
+              </div>
+              <div id="r4">
+                <img height="190px" width="378px" src="images/r4.webp" alt="" />
+                <h2
+                  style="
+                    margin-left: 32px;
+                    margin-right: 32px;
+                    margin-top: 28px;
+                    margin-bottom: 28px;
+                    color: white;
+                  "
+                >
+                  Supercharge Software Development by Using GPT-4 for Data Model
+                  Design
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="lastButOne" style="margin-top: 50px; margin-left: 60px">
+        <a href=""
+          ><img
+            style="cursor: none"
+            id="magnet"
+            height="28px"
+            width="100px"
+            src="/images/logo.png"
+            alt="" /></a
+        ><br /><br />
+        <br />
+        <h3>Interested in receiving exclusive content?</h3>
+        <form
+          id="myForm"
+          style="width: fit-content; display: flex; position: relative"
+        >
+          <input type="email" id="myinput" placeholder="Enter Your Email" />
+          <button type="submit" id="rectangle">
+            <i
+              style="color: white; font-size: 28px"
+              class="ri-arrow-drop-right-line"
+            ></i>
+          </button>
+        </form>
+      </div>
+      <br /><br /><br />
+      <div style="height: 1px; background-color: black"></div>
+      <h4 style="font-family: Manrope; margin-left: 60px; font-weight: 100">
+        &copy; 2023 Actalyst, Inc.
+      </h4>
+      <br />
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
